@@ -4,12 +4,13 @@ int visited[10],adjacent[10][10];
 void DFS(int v,int n)
 {
 	visited[v]=1;
-	cout<<v<<endl;
+	cout<<v;
 	for(int i=0;i<n;i++)
 	{
 		if(adjacent[v][i]==1 && visited[i]==0)
 			DFS(i,n);
-	}	
+	}
+	cout<<endl;	
 }
 int main()
 {
